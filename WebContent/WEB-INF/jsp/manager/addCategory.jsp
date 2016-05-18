@@ -10,7 +10,7 @@ $(function(){
 			alert("添加成功！");
 		});
 		
-		return false;s
+		return false;
 	});
 });
 

@@ -55,11 +55,11 @@ $(function(){
 						<li url="">
 							<a href="#"><em class="base_sys"></em><span>信息管理</span></a>
 						</li>
-						<li url="">
-							<a href="#"><em class="base_sys"></em><span>添加房产</span></a>
+						<li url="toAddSong.action">
+							<a href="#"><em class="base_sys"></em><span>添加歌曲</span></a>
 						</li>
-						<li url="">
-							<a href="#"><em class="base_sys"></em><span>房产管理</span></a>
+						<li url="toSongManager.action">
+							<a href="#"><em class="base_sys"></em><span>歌曲管理</span></a>
 						</li>
 					</ul>
 				</div>
