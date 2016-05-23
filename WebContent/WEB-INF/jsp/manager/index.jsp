@@ -24,6 +24,7 @@ $(function(){
 		var url = $(this).attr("url");
 		$(".right").load(url);		
 	});
+	$(".baseUI li").filter(":first").trigger("click");
 });
 </script>
 <body>
@@ -34,6 +35,7 @@ $(function(){
 				<div class="t_sign">
 					<span>你好，管理员</span><a href="#" class="t_exit">退出</a>
 				</div>
+				
 			</div>
 		</div>
 		<div id="cont">
@@ -49,10 +51,10 @@ $(function(){
 						<li url="toCategoryManager.action">
 							<a href="#"><em class="base_userset"></em><span>栏目管理</span></a>
 						</li>
-						<li url="">
+						<li url="toAddArticle.action">
 							<a href="#"><em class="base_roll"></em><span>信息发布</span></a>
 						</li>
-						<li url="">
+						<li url="toArticleManager.action">
 							<a href="#"><em class="base_sys"></em><span>信息管理</span></a>
 						</li>
 						<li url="toAddSong.action">
