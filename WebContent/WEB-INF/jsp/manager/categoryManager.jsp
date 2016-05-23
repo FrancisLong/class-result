@@ -38,15 +38,19 @@
 $(function(){
 	$(".upd").off();
 	$(".upd").on("click",function(){
-		alert("功能未完善");
+		var id = $(this).attr("val");
+		$(".right").load("toUpdCategory.action",{id:id});
 	});
 	
 	$(".del").off();
 	$(".del").on("click",function(){
-		var id = $(this).attr("val");
-		$.post("delCategory.action",{id:id},function(){
-			$(".baseUI li :contains('栏目管理')").trigger("click");
-		});
+		var flag = confirm("确定删除吗？");
+		if(flag){
+			var id = $(this).attr("val");
+			$.post("delCategory.action",{id:id},function(){
+				$(".baseUI li :contains('栏目管理')").trigger("click");
+			});
+		}
 	});
 	
 	
